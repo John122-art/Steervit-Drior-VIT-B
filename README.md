@@ -402,3 +402,8 @@ The code takes inspiration from https://github.com/Kguo-cs/iPad.
 The NAVSIM-v2 evaluation code is adopted from https://github.com/autonomousvision/navsim.
 
 The scaling experiments are based on the data from https://github.com/OpenDriveLab/SimScale.
+
+
+## 本工程训练权重
+
+已通过 Git LFS 上传原工程中的 best、epoch=24 和 last checkpoint，路径保持原样。[文件列表与下载说明](docs/checkpoints.md)。

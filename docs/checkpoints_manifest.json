@@ -1,0 +1,29 @@
+{
+  "uploaded_utc": "2026-11-10T01:47:30.693628+00:00",
+  "source_project": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main",
+  "checkpoint_files": [
+    {
+      "path": "exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt",
+      "bytes": 576168266,
+      "sha256": "4219c9f3dbb2bd499524be9184015cb2b18870bf14c0281106f2a54c3b903a3c",
+      "storage": "Git LFS",
+      "source": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt"
+    },
+    {
+      "path": "exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/epoch=24-step=20150.ckpt",
+      "bytes": 576168266,
+      "sha256": "85aca5af92ce8ffa78837646b7a43164add663991f3c4606d763593fac759e68",
+      "storage": "Git LFS",
+      "source": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/epoch=24-step=20150.ckpt"
+    },
+    {
+      "path": "exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/last.ckpt",
+      "bytes": 576168266,
+      "sha256": "85aca5af92ce8ffa78837646b7a43164add663991f3c4606d763593fac759e68",
+      "storage": "Git LFS",
+      "source": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/last.ckpt"
+    }
+  ],
+  "unique_objects": 2,
+  "note": "last.ckpt and epoch=24-step=20150.ckpt have identical bytes and share one LFS object."
+}
