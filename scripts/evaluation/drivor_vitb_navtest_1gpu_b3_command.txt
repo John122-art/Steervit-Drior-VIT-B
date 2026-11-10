@@ -1,0 +1,19 @@
+# 本地单卡全量navtest评测，无需DLC。
+# 默认权重：exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt
+# GPU 0，FP32，每批3个场景，每个场景4张图，TEST_LIMIT=0表示完整navtest。
+# 脚本自动激活drivorpython环境，使用与Route B评测相同的PDM缓存。
+# 每次执行创建新的带时间戳输出目录；不是续跑已有任务。
+# 当前已有batch=3任务在运行，无需重复执行；以下命令供后续使用。
+
+CUDA_VISIBLE_DEVICES=0 \
+BATCH_SIZE=3 \
+TEST_LIMIT=0 \
+bash /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/run_drivor_vitb_navtest_1gpu.sh
+
+# 结果目录：
+# /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/drivor_vitb_best23_navtest_1gpu_b3_<UTC时间>/
+# 完成后读取summary.json中的pdms_percent，同时确认complete=true、full_navtest=true。
+# 本次已启动任务的输出目录：
+# /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/drivor_vitb_best23_navtest_1gpu_b3_20261109T032600
+# 本次日志：
+# /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/evaluation_logs/drivor_vitb_best23_navtest_1gpu_b3_20261109T032600.log
