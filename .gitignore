@@ -13,14 +13,3 @@ __pycache__/
 /carla/
 *egg*
 .DS_Store
-
-# Model weights and local credentials
-*.ckpt
-*.pth
-*.pt
-*.safetensors
-*.onnx
-.env
-.env.*
-*.pem
-*.key
