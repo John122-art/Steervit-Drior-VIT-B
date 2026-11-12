@@ -1,0 +1,149 @@
+# Steer-DrivoR: drivoR.yaml + per-camera language steering (SteerViT CA in the ViT-B encoder).
+# All fields above `steer:` are identical to drivoR.yaml (checkpoint D was trained with them).
+_target_: navsim.agents.drivoR_steer.steer_agent.DrivoRSteerAgent
+
+config:
+
+  b2d: false # training for navsim
+
+  shared_refiner: false
+  ref_num: 4 # number of refining steps
+  scorer_ref_num: 4
+
+  proposal_num: 64 # number of proposals (trajectories)
+  num_poses: 8 # size if the trajectories
+
+  num_scene_tokens: 16 
+  one_token_per_traj: true
+  full_history_status: false
+
+  long_trajectory_additional_poses: -1 # to load additional poses (not use currently in this version)
+
+  noc: 1.0 
+  dac: 1.0
+  ddc: 0.0
+  ttc: 5.0
+  ep: 5.0
+  comfort: 2.0
+
+  tf_d_model: 256 # general feature size of the model
+  tf_d_ffn: 1024 # hidden size of the heads
+
+  ####################
+  # sensor config
+  cam_f0: [3]
+  cam_l0: [3]
+  cam_l1: []
+  cam_l2: []
+  cam_r0: [3]
+  cam_r1: []
+  cam_r2: []
+  cam_b0: [3]
+  lidar_pc: []
+
+
+  ####################
+  # image branch params
+  image_size: [1148, 672] # input image size
+  
+  image_backbone:
+    model_name: timm/vit_base_patch14_dinov2.lvd142m
+    model_weights: /mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors
+    use_lora: true
+    finetune: false
+    lora_rank: 32
+    focus_front_cam: false
+    use_feature_pooling: false
+    compress_fc: false
+
+
+  # fov: [[-50., -50., -5.], [50., 50., 5.]] # simplebev field of view
+  # voxel_grid: [100, 100, 8] # simple voxel grid size 
+  # bev_encoder_conv_only: true # true, drop the classifier | false, classifier thus one scene vector
+
+  #####################
+  # Lidar branch params
+  lidar_min_x: -35
+  lidar_max_x: 35
+  lidar_min_y: -35
+  lidar_max_y: 35
+  lidar_image_size: [518, 518] # input image size
+  lidar_hist_max_per_pixel: 5
+  lidar_max_height: 100.0
+  lidar_split_height: 0.2
+  lidar_use_ground_plane: true
+  lidar_backbone:
+    model_name: timm/vit_small_patch14_reg4_dinov2.lvd142m
+    model_weights: weights/vit_small_patch14_reg4_dinov2.lvd142m/model.safetensors
+    use_lora: true
+    finetune: false
+    lora_rank: 32
+    in_chans: 2 # 2 if use ground plane, 1 otherwise
+
+
+  ####################
+  # scorer params
+  double_score: false
+  agent_pred: false
+  area_pred: false
+  bev_map: false
+  bev_agent: false
+  refiner_num_heads: 1
+  refiner_ls_values: 0.0
+  
+  trajectory_sampling:
+    _target_: nuplan.planning.simulation.trajectory.trajectory_sampling.TrajectorySampling
+    time_horizon: 4
+    interval_length: 0.5
+
+  ####################
+  # language steering
+  steer:
+    enabled: true                 # false = D+ control (same init / lr / steps, no language, no grounding)
+    cross_attn_layers: [1, 3, 5, 7, 9, 11]   # zero-indexed blocks of the SteerViT ViT-B checkpoint
+    use_ffn: false                # SteerViT configs/default.yaml
+    ff_mult: 2
+    text_encoder: /mnt/zhaozc_workspace/project/LQH/RoBERTa   # roberta-large, frozen
+    text_max_length: 128          # stage2_focus texts are capped at 128 RoBERTa tokens
+    text_dropout: 0.2             # per sample: all four cameras empty, no grounding loss
+    ground_loss_weight: 0.5       # loss = L_DrivoR + 0.5 * s * L_ground
+    gate_ramp_fraction: 0.1       # s: 0 -> 1 over this fraction of the scheduler steps
+    grid_mask: false              # training GridMask (D was trained with it on); applies to steer AND D+ runs
+
+
+
+loss:
+  _target_: navsim.agents.drivoR.layers.losses.drivor_loss.DrivoRLoss
+  trajectory_weight: 1.0
+  inter_weight: 0.0
+  sub_score_weight: 0.0
+  final_score_weight: 1.0
+  pred_ce_weight: 1.0
+  pred_l1_weight: 0.1
+  pred_area_weight: 2.0
+  prev_weight: 0.0
+  agent_class_weight: 1.0
+  agent_box_weight: 0.1
+  bev_semantic_weight: 1.0
+  div_weight: 0.0
+
+
+checkpoint_path: ''
+init_args:                        # used only for training (checkpoint_path == '')
+  drivor_checkpoint: ???          # checkpoint D (best-epoch=23-step=19344.ckpt)
+  stage1_checkpoint: ''           # stage-1 best .ckpt; if empty, steervit_checkpoint is used
+  steervit_checkpoint: ''         # official steervit_dinov2_base.pth
+lr_args: 
+  name: AdamW
+  base_lr: 5e-4
+  base_batch_size: 64
+  d_lr_scale: 0.1                 # DrivoR params (LoRA, registers, neck, decoders): 0.1x
+  steer_lr_scale: 0.01            # CA / connector / seg head: another 0.1x
+scheduler_args: 
+  num_epochs: ${trainer.params.max_epochs}
+  dataset_size: 85000 # for navsim
+
+batch_size: ${dataloader.params.batch_size}
+num_gpus: 1 # the batchsize is per gpu --> need to update for steps
+
+progress_bar: true # default progress bar. if false replace by a console print every 100 iterations (better for JZ)

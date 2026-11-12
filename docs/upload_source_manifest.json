@@ -2,248 +2,252 @@
   "source_project": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main",
   "source_parent_requested": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial",
   "layout": "Contents of DrivoR-main mirrored at repository root",
-  "copied_utc": "2026-11-10T01:36:12.866138+00:00",
-  "source_files": 1559,
-  "source_bytes": 63987972,
+  "copied_utc": "2026-11-12T06:48:24.421760+00:00",
+  "source_files": 1579,
+  "source_bytes": 64192578,
   "source_symlinks": [
     "nuplan-devkit/.github/README.md"
   ],
   "excluded": [
     {
       "path": "weights",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "exp",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/.env",
-      "reason": "weights, bytecode, credentials or Git metadata"
+      "reason": "weights, credentials, Git metadata or bytecode"
     },
     {
       "path": "nuplan-devkit/nuplan/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/database/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/database/utils/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/database/utils/pointclouds/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/database/maps_db/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/database/common/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/database/common/blob_store/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/common/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/common/maps/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/common/maps/nuplan_map/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/common/utils/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/common/geometry/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/common/actor_state/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/metrics/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/metrics/utils/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/history/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/occupancy_map/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/observation/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/observation/idm/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/path/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/trajectory/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/simulation_time_controller/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/planner/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/simulation/planner/ml_planner/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/utils/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/utils/multithreading/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "nuplan-devkit/nuplan/planning/scenario_builder/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "scripts/evaluation/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/drivoR/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/drivoR/utils/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/drivoR/score_module/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/drivoR/layers/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/drivoR/layers/utils/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/drivoR/layers/losses/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/agents/drivoR/layers/image_encoder/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/__pycache__",
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/evaluate/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/common/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/script/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/script/config/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/script/config/common/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/metric_caching/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/simulation/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/simulation/planner/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/simulation/planner/pdm_planner/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/simulation/planner/pdm_planner/observation/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/simulation/planner/pdm_planner/simulation/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/simulation/planner/pdm_planner/utils/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/simulation/planner/pdm_planner/scoring/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/utils/multithreading/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/scenario_builder/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     },
     {
       "path": "navsim/planning/training/__pycache__",
-      "reason": "runtime artifacts or repository metadata"
+      "reason": "runtime artifact, Git metadata or directory symlink"
     }
   ],
   "inventory": [
@@ -273,6 +277,11 @@
       "sha256": "b4c6c6d500d673fd4366ccf586ee5acf68bae37b492ae48125b1fba4c3708d3f"
     },
     {
+      "path": "steer_language_branch_v2.zip",
+      "bytes": 58052,
+      "sha256": "efef2008fff505ef6bfbf486761b9f9dc9120d821d9874ee50158ca57ab8d47e"
+    },
+    {
       "path": ".gitmodules",
       "bytes": 99,
       "sha256": "bfe880179a61f1d33c0bd0045a7e97b708ac8a68018d9d433ed31a20ef378388"
@@ -298,6 +307,11 @@
       "sha256": "916ab2d88db1b1205119b64092bd92aec36a35c08879a0eec7d1b1cde473a906"
     },
     {
+      "path": "tests/test_steer_drivor_units.py",
+      "bytes": 16231,
+      "sha256": "fa2653b0e28da02a1359b22df07cf0e9ade67e5a9382b749eae8c918723b7ab3"
+    },
+    {
       "path": "docs/submission.md",
       "bytes": 3059,
       "sha256": "6ff4fae188bc0bdee83256969f0ca2357fdbb87f38f9c11dd218f0ebb48ddb80"
@@ -306,6 +320,11 @@
       "path": "docs/vitb_training_memory.md",
       "bytes": 1476,
       "sha256": "11ad10d703cab2931badfd5aba09d7e042944d3a0c770bac490ea4b98d9c885c"
+    },
+    {
+      "path": "docs/steer_language_branch.md",
+      "bytes": 10814,
+      "sha256": "483677e36dc55e61643d5d3fb15a8c74abbbc489668a3abfac6e648640a0c77b"
     },
     {
       "path": "docs/metrics.md",
@@ -7093,6 +7112,11 @@
       "sha256": "cd6427bf97e4fed6775898d3cf40b06dd2673dc9b194a7891221fff64914e6c0"
     },
     {
+      "path": "scripts/evaluation/run_drivor_steer_navtest_1gpu.sh",
+      "bytes": 3153,
+      "sha256": "3c9778cf25b301df57ee4c9b5ee94e2f4f90170ec5a9be83c09b59d4f33e3698"
+    },
+    {
       "path": "scripts/evaluation/run_human_agent_pdm_score_evaluation.sh",
       "bytes": 180,
       "sha256": "ba48d4d37ffc2144b547d9d568a17613ef31e255d291d3cbd1ddaa3ed5bb298b"
@@ -7118,6 +7142,11 @@
       "sha256": "ee9336244bbc204a2d9958181452fc11718a979977cb2fc1f05a708ad80270a8"
     },
     {
+      "path": "scripts/evaluation/evaluate_drivor_steer.py",
+      "bytes": 18744,
+      "sha256": "50a528e14b51840402456014f6e3217f45f6775c21d6be01f8f68a82c76dc77e"
+    },
+    {
       "path": "scripts/evaluation/drivor_vitb_navtest_1gpu_b3_command.txt",
       "bytes": 1260,
       "sha256": "99684c61dba026cef0f923c69df072537c91ac4295b55ce0939b38fb8bb44b82"
@@ -7133,6 +7162,21 @@
       "sha256": "e39f0c574ac9e07feeb2ccc76790589dc9551041e2c651c679ddfbacbb200884"
     },
     {
+      "path": "scripts/training/run_steer_stage2_8gpu_dlc.sh",
+      "bytes": 7227,
+      "sha256": "0d7e1bcc04d7140fe74e64b853a6ab3a039efbcae72e4985a7f15465ea855dd0"
+    },
+    {
+      "path": "scripts/training/train_steer_stage1.py",
+      "bytes": 9938,
+      "sha256": "adfbe84cab7d52323fceebc9d827b1e3b66880640b637eac801b02c8e64f6c47"
+    },
+    {
+      "path": "scripts/training/run_steer_stage1_8gpu_dlc.sh",
+      "bytes": 3402,
+      "sha256": "6aeb0beb4a79e3dba459c91b3832c4987917481555bc6d3354f006c5b0072d26"
+    },
+    {
       "path": "scripts/training/check_drivor_vitb_backbone.py",
       "bytes": 6402,
       "sha256": "abc4ee0e95967ec16e4b7e1ee5769b4353a66601b7c4eaadb7642c2f1f37904b"
@@ -7141,6 +7185,11 @@
       "path": "scripts/training/run_ego_mlp_agent_training.sh",
       "bytes": 203,
       "sha256": "568c514a9a9557ba6c419f28367d4f853140f7cdf3022b9a561d034bc8ef3865"
+    },
+    {
+      "path": "scripts/training/check_steer_drivor.py",
+      "bytes": 8745,
+      "sha256": "e947f30f30cd7ca7be0303321f69c898817a1e640e0d54fd65e48c74a3ced3a2"
     },
     {
       "path": "scripts/training/profile_drivor_single_gpu.py",
@@ -7271,6 +7320,51 @@
       "path": "navsim/agents/drivoR/layers/image_encoder/dinov2_lora.py",
       "bytes": 15314,
       "sha256": "a19495aa1113285743a96e1b13c5e3ca298c48f70f8dd3d702842f87388f5f4b"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/steer_model.py",
+      "bytes": 6284,
+      "sha256": "3fd918c2e0fd24b8b9cfc7efdda8478934fe24deb92e172496de7fba7161ae2f"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/steer_encoder.py",
+      "bytes": 12301,
+      "sha256": "1f91bcdefb1c92223742cd6b60f31827bd7ef51fb01384806495dc079352837a"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/steer_agent.py",
+      "bytes": 7987,
+      "sha256": "15c349f4e3fcc54e1c08ec8aac073763493eb956d281c73d55f256a510a171ca"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/config_utils.py",
+      "bytes": 262,
+      "sha256": "9b6b19aa7b752b68bca6e4dcbdf26c4450c76ed0386342b6619b1ba4341bc15b"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/__init__.py",
+      "bytes": 89,
+      "sha256": "867f7710eafaf72b29177ca28dc234fdbb718f4e831a7f179b3c4208b428437f"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/checkpoint_utils.py",
+      "bytes": 8272,
+      "sha256": "267d52653a19081a5458b69c88e1ac632d4f4f61ad3fcf6379ac77cd511f04ef"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/steer_data.py",
+      "bytes": 10128,
+      "sha256": "2479124947ad673395a6cb0251d3a17a7f35a7923ae3973274957be350bf357e"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/steer_loss.py",
+      "bytes": 2466,
+      "sha256": "57da19a9ef06a79fd8f7a47f344171c9cf82a2b02d565be96ae9ea395212c920"
+    },
+    {
+      "path": "navsim/agents/drivoR_steer/steervit_modules.py",
+      "bytes": 6560,
+      "sha256": "d24730a074057f527ca11949bffdac76c7ca28e9344c7a3d0bb2dbcc362e0d2d"
     },
     {
       "path": "navsim/evaluate/__init__.py",
@@ -7408,6 +7502,11 @@
       "sha256": "f64a13168397aeab9326f4b8d10b711ca525e13883d53c7b722575ee997565e5"
     },
     {
+      "path": "navsim/planning/script/run_training_steer.py",
+      "bytes": 9279,
+      "sha256": "b6ccfba9971a5059d43572439644c48c6e4661767811a994eae96b40309878ad"
+    },
+    {
       "path": "navsim/planning/script/run_pdm_score_multi_gpu.py",
       "bytes": 7987,
       "sha256": "ee1d0bcdf70a05055daef411c90044b9465bfef2c5655d20a2a50b30e96dbeb9"
@@ -7536,6 +7635,11 @@
       "path": "navsim/planning/script/config/common/agent/drivoR.yaml",
       "bytes": 3099,
       "sha256": "ea497e31eec98f315587b0bd223d2b6471c2d4509708ebbfbfb048577c78558c"
+    },
+    {
+      "path": "navsim/planning/script/config/common/agent/drivoR_steer.yaml",
+      "bytes": 4672,
+      "sha256": "da7a9a63425019886e589ce65ec09c1c5f602504f65247408ece77dced26469d"
     },
     {
       "path": "navsim/planning/script/config/common/worker/sequential.yaml",
@@ -8043,5 +8147,29 @@
       "sha256": "008c603684661a0e0ea10978a6c8c91208940882d4e6ba71dd8b5a752aff2078"
     }
   ],
-  "verification": "Copied source files verified with SHA-256; .gitignore subsequently extended to exclude weights and credentials."
+  "verification": "Changed source files copied with SHA-256 verification; README and .gitignore retain repository-specific weight-download additions. Existing LFS checkpoints preserved.",
+  "syntax_checks": {
+    "python": [
+      "tests/test_steer_drivor_units.py",
+      "scripts/evaluation/evaluate_drivor_steer.py",
+      "scripts/training/train_steer_stage1.py",
+      "scripts/training/check_steer_drivor.py",
+      "navsim/agents/drivoR_steer/steer_model.py",
+      "navsim/agents/drivoR_steer/steer_encoder.py",
+      "navsim/agents/drivoR_steer/steer_agent.py",
+      "navsim/agents/drivoR_steer/config_utils.py",
+      "navsim/agents/drivoR_steer/__init__.py",
+      "navsim/agents/drivoR_steer/checkpoint_utils.py",
+      "navsim/agents/drivoR_steer/steer_data.py",
+      "navsim/agents/drivoR_steer/steer_loss.py",
+      "navsim/agents/drivoR_steer/steervit_modules.py",
+      "navsim/planning/script/run_training_steer.py"
+    ],
+    "shell": [
+      "scripts/evaluation/run_drivor_steer_navtest_1gpu.sh",
+      "scripts/training/run_steer_stage2_8gpu_dlc.sh",
+      "scripts/training/run_steer_stage1_8gpu_dlc.sh"
+    ]
+  },
+  "removed_source_paths": []
 }
