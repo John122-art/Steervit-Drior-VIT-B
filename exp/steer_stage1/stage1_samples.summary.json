@@ -1,0 +1,12 @@
+{
+  "scenes": 67526,
+  "views": 270104,
+  "empty_text": 26268,
+  "invalid_grounding": 38358,
+  "samples": 205478,
+  "train_samples": 201561,
+  "val_samples": 3917,
+  "bundle": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full",
+  "val_percent": 2.0,
+  "grounding_override": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_grounding_fix_v1/masks"
+}

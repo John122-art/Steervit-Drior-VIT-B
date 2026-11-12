@@ -1,0 +1,21 @@
+[2026-11-12 10:36:06,184][__main__][INFO] - Global Seed set to 2
+[2026-11-12 10:36:06,186][__main__][INFO] - Path where all results are stored: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.36
+[2026-11-12 10:36:06,186][__main__][INFO] - Building Agent
+[2026-11-12 10:36:07,286][timm.models._builder][INFO] - Loading pretrained weights from file (/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors)
+[2026-11-12 10:36:07,291][timm.models._helpers][INFO] - Loaded  from checkpoint '/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors'
+[2026-11-12 10:36:07,308][timm.layers.pos_embed][INFO] - Resized position embedding: (37, 37) to (48, 82).
+[2026-11-12 10:36:07,919][navsim.planning.utils.multithreading.worker_ray_no_torch][INFO] - Not using GPU in ray
+[2026-11-12 10:36:07,919][navsim.planning.utils.multithreading.worker_ray_no_torch][INFO] - Starting ray local!
+[2026-11-12 10:36:13,948][nuplan.planning.utils.multithreading.worker_pool][INFO] - Worker: RayDistributedNoTorch
+[2026-11-12 10:36:13,948][nuplan.planning.utils.multithreading.worker_pool][INFO] - Number of nodes: 1
+Number of CPUs per node: 8
+Number of GPUs per node: 0
+Number of threads across all nodes: 8
+[2026-11-12 10:36:15,774][__main__][INFO] - Building Lightning Module
+[2026-11-12 10:36:15,774][__main__][INFO] - Building SceneLoader
+[2026-11-12 10:37:38,186][__main__][INFO] - Steer text index: [{'path': '/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2_full_p3/train/dataset_index.jsonl', 'rows': 85109}, {'path': '/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2_full_p3/val/dataset_index.jsonl', 'rows': 18179}]; train {'dataset_scenes': 103288, 'missing_text_scenes': 0}; val {'dataset_scenes': 18179, 'missing_text_scenes': 0}
+[2026-11-12 10:37:38,186][__main__][INFO] - Building Datasets
+[2026-11-12 10:37:38,193][__main__][INFO] - Num training samples: 103288
+[2026-11-12 10:37:38,194][__main__][INFO] - Num validation samples: 18179
+[2026-11-12 10:37:38,194][__main__][INFO] - Building Trainer
+[2026-11-12 10:37:38,286][__main__][INFO] - Starting Training

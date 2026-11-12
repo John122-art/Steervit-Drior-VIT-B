@@ -1,0 +1,12 @@
+{
+  "mode": "correct",
+  "index": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2_full_p3/test/dataset_index.jsonl",
+  "scenes": 1000,
+  "changed_scenes": 0,
+  "empty_views": {
+    "cam_f0": 35,
+    "cam_b0": 47,
+    "cam_l0": 185,
+    "cam_r0": 216
+  }
+}

@@ -1,0 +1,17 @@
+Setup environment for CUDA
+Reading saved training config: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   4%|▎         | 5/136 [00:00<00:02, 47.68it/s]Loading logs:   7%|▋         | 10/136 [00:00<00:03, 38.37it/s]Loading logs:  10%|█         | 14/136 [00:00<00:03, 32.46it/s]Loading logs:  15%|█▍        | 20/136 [00:00<00:02, 39.13it/s]Loading logs:  19%|█▉        | 26/136 [00:00<00:02, 43.11it/s]Loading logs:  23%|██▎       | 31/136 [00:00<00:02, 44.29it/s]Loading logs:  26%|██▋       | 36/136 [00:00<00:02, 41.11it/s]Loading logs:  30%|███       | 41/136 [00:00<00:02, 42.61it/s]Loading logs:  35%|███▍      | 47/136 [00:01<00:01, 46.55it/s]Loading logs:  38%|███▊      | 52/136 [00:01<00:01, 42.59it/s]Loading logs:  43%|████▎     | 59/136 [00:01<00:01, 48.37it/s]Loading logs:  47%|████▋     | 64/136 [00:01<00:01, 47.71it/s]Loading logs:  51%|█████     | 69/136 [00:01<00:01, 40.98it/s]Loading logs:  55%|█████▌    | 75/136 [00:01<00:01, 45.33it/s]Loading logs:  59%|█████▉    | 80/136 [00:02<00:01, 29.46it/s]Loading logs:  62%|██████▎   | 85/136 [00:02<00:01, 32.14it/s]Loading logs:  65%|██████▌   | 89/136 [00:02<00:01, 31.74it/s]Loading logs:  70%|██████▉   | 95/136 [00:02<00:01, 36.93it/s]Loading logs:  74%|███████▎  | 100/136 [00:02<00:01, 29.32it/s]Loading logs:  77%|███████▋  | 105/136 [00:02<00:00, 32.71it/s]Loading logs:  81%|████████  | 110/136 [00:02<00:00, 36.33it/s]Loading logs:  85%|████████▍ | 115/136 [00:02<00:00, 39.49it/s]Loading logs:  88%|████████▊ | 120/136 [00:03<00:00, 22.54it/s]Loading logs:  91%|█████████ | 124/136 [00:03<00:00, 23.04it/s]Loading logs:  94%|█████████▍| 128/136 [00:04<00:00, 16.89it/s]Loading logs:  99%|█████████▉| 135/136 [00:04<00:00, 23.79it/s]Loading logs: 100%|██████████| 136/136 [00:04<00:00, 32.95it/s]
+Inputs PASS: 12146/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/drivor_vitb_best23_navtest_1gpu_b3_20261109T032600
+loading  timm/vit_base_patch14_dinov2.lvd142m
+Loading full checkpoint on CPU: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 466, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 23, 'global_step': 19344}
+Starting FP32 inference: batch_size=3, scenes=12146
+3/12146, elapsed=4.7s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+75/12146, elapsed=53.4s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+150/12146, elapsed=108.1s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+225/12146, elapsed=163.1s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+300/12146, elapsed=220.8s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+375/12146, elapsed=277.4s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+450/12146, elapsed=336.9s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+525/12146, elapsed=394.9s, last_valid=True, batch_size=3, peak_allocated_gib=2.14

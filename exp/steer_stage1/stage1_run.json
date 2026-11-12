@@ -1,0 +1,61 @@
+{
+  "args": {
+    "command": "train",
+    "samples": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage1/stage1_samples.jsonl",
+    "output": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage1",
+    "drivor_checkpoint": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt",
+    "steervit_checkpoint": "/mnt/zhaozc_workspace/project/LQH/SteerViT_checkpoint/steervit_dinov2_base.pth",
+    "roberta": "/mnt/zhaozc_workspace/project/LQH/RoBERTa",
+    "devices": "8",
+    "batch_size": "32",
+    "num_workers": "8",
+    "max_epochs": "3",
+    "lr": "0.0001",
+    "final_lr_ratio": "0.1",
+    "warmup_fraction": "0.05",
+    "weight_decay": "0.01",
+    "grad_clip": "1.0",
+    "val_check_interval": "0.25",
+    "precision": "16-mixed",
+    "seed": "2"
+  },
+  "init": {
+    "drivor": {
+      "path": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt",
+      "loaded_keys": 466,
+      "missing_steer_keys": 43,
+      "epoch": 23,
+      "global_step": 19344
+    },
+    "steer": {
+      "path": "/mnt/zhaozc_workspace/project/LQH/SteerViT_checkpoint/steervit_dinov2_base.pth",
+      "ca_layers": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "ca_tensors": 36,
+      "connector_tensors": 4,
+      "seg_head_tensors": 2,
+      "ignored": [
+        "textPE.weight"
+      ],
+      "other_trunk_keys_skipped": 0,
+      "tanh_gates": {
+        "1": 0.010410514660179615,
+        "3": -0.012932402081787586,
+        "5": 0.03133238106966019,
+        "7": -0.10656863451004028,
+        "9": 0.2788444757461548,
+        "11": -0.49224019050598145
+      }
+    }
+  },
+  "train_samples": 201561,
+  "val_samples": 3917,
+  "trainable_parameters": 23080455,
+  "total_steps": 2361
+}

@@ -1,0 +1,20 @@
+[2026-11-07 03:23:42,482][__main__][INFO] - Global Seed set to 2
+[2026-11-07 03:23:42,485][__main__][INFO] - Path where all results are stored: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b32_25epochs/11.07_03.23
+[2026-11-07 03:23:42,485][__main__][INFO] - Building Agent
+[2026-11-07 03:23:43,598][timm.models._builder][INFO] - Loading pretrained weights from file (/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors)
+[2026-11-07 03:23:43,602][timm.models._helpers][INFO] - Loaded  from checkpoint '/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors'
+[2026-11-07 03:23:43,616][timm.layers.pos_embed][INFO] - Resized position embedding: (37, 37) to (48, 82).
+[2026-11-07 03:23:44,101][navsim.planning.utils.multithreading.worker_ray_no_torch][INFO] - Not using GPU in ray
+[2026-11-07 03:23:44,101][navsim.planning.utils.multithreading.worker_ray_no_torch][INFO] - Starting ray local!
+[2026-11-07 03:23:49,290][nuplan.planning.utils.multithreading.worker_pool][INFO] - Worker: RayDistributedNoTorch
+[2026-11-07 03:23:49,290][nuplan.planning.utils.multithreading.worker_pool][INFO] - Number of nodes: 1
+Number of CPUs per node: 8
+Number of GPUs per node: 0
+Number of threads across all nodes: 8
+[2026-11-07 03:23:49,438][__main__][INFO] - Building Lightning Module
+[2026-11-07 03:23:49,439][__main__][INFO] - Building SceneLoader
+[2026-11-07 03:24:59,142][__main__][INFO] - Building Datasets
+[2026-11-07 03:24:59,153][__main__][INFO] - Num training samples: 103288
+[2026-11-07 03:24:59,155][__main__][INFO] - Num validation samples: 18179
+[2026-11-07 03:24:59,155][__main__][INFO] - Building Trainer
+[2026-11-07 03:24:59,232][__main__][INFO] - Starting Training

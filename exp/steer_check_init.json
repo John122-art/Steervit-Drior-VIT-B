@@ -1,0 +1,82 @@
+{
+  "load_d": {
+    "path": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt",
+    "loaded_keys": 466,
+    "missing_steer_keys": 43,
+    "epoch": 23,
+    "global_step": 19344
+  },
+  "load_steervit": {
+    "path": "/mnt/zhaozc_workspace/project/LQH/SteerViT_checkpoint/steervit_dinov2_base.pth",
+    "ca_layers": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "ca_tensors": 36,
+    "connector_tensors": 4,
+    "seg_head_tensors": 2,
+    "ignored": [
+      "textPE.weight"
+    ],
+    "other_trunk_keys_skipped": 0,
+    "tanh_gates": {
+      "1": 0.010410514660179615,
+      "3": -0.012932402081787586,
+      "5": 0.03133238106966019,
+      "7": -0.10656863451004028,
+      "9": 0.2788444757461548,
+      "11": -0.49224019050598145
+    }
+  },
+  "checks": {
+    "empty_text_equals_D": {
+      "registers": 0.0,
+      "proposals": 0.0,
+      "pdm_score": 0.0,
+      "trajectory": 0.0
+    },
+    "gate_scale_0_equals_D": {
+      "registers": 0.0,
+      "proposals": 0.0,
+      "pdm_score": 0.0,
+      "trajectory": 0.0
+    },
+    "per_camera_routing": {
+      "cam_f0": {
+        "text_row_changed": 13.562514305114746,
+        "other_rows_max_diff": 0.0
+      },
+      "cam_b0": {
+        "text_row_changed": 10.585602760314941,
+        "other_rows_max_diff": 0.0
+      },
+      "cam_l0": {
+        "text_row_changed": 12.487907409667969,
+        "other_rows_max_diff": 0.0
+      },
+      "cam_r0": {
+        "text_row_changed": 2.9731130599975586,
+        "other_rows_max_diff": 0.0
+      }
+    },
+    "swap_samples": {
+      "sample0_vs_swapped1": 0.0,
+      "sample1_vs_swapped0": 0.0
+    },
+    "ground_logits": {
+      "shape": [
+        2,
+        4,
+        3936
+      ],
+      "finite": true
+    }
+  },
+  "tolerance": 0.0,
+  "failures": [],
+  "passed": true
+}

@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "model_root": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main",
+  "reference_root": "/mnt/zhaozc_workspace/project/LQH/Drivor-claude/DrivoR-main",
+  "config_changes": {
+    "model_name": {
+      "reference": "timm/vit_small_patch14_reg4_dinov2.lvd142m",
+      "current": "timm/vit_base_patch14_dinov2.lvd142m"
+    },
+    "model_weights": {
+      "reference": "weights/vit_small_patch14_reg4_dinov2.lvd142m/model.safetensors",
+      "current": "/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors"
+    }
+  },
+  "identical_model_python_files": 19,
+  "local_weight_file": "/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors",
+  "create_model_calls": [
+    {
+      "name": "timm/vit_base_patch14_dinov2.lvd142m",
+      "file": "/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors"
+    }
+  ],
+  "strict_loads": [
+    {
+      "strict": true,
+      "loaded_keys": 174,
+      "missing_keys": [],
+      "unexpected_keys": []
+    }
+  ],
+  "fallback_used": false,
+  "num_features": 768,
+  "scene_embeds_shape": [
+    1,
+    4,
+    16,
+    768
+  ],
+  "neck_in_out": [
+    768,
+    256
+  ],
+  "planner_token_shape": [
+    1,
+    64,
+    256
+  ],
+  "native_prefix_tokens": 1,
+  "grid_hw": [
+    48,
+    82
+  ],
+  "lidar_branches": 0,
+  "qkv_max_absolute_difference": 0.0,
+  "qkv_sha256": "224e9db80e91065f83e45aa7c2010842a9615a61cd2ae2309a4c2d581f58d77d",
+  "language_modules_present": false,
+  "scope": "CPU model initialization and exact weight/interface checks; no training or full-image forward"
+}

@@ -1,0 +1,55 @@
+Setup environment for CUDA
+Reading saved training config: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   4%|▎         | 5/136 [00:00<00:02, 44.46it/s]Loading logs:   7%|▋         | 10/136 [00:00<00:03, 34.15it/s]Loading logs:  10%|█         | 14/136 [00:00<00:05, 21.20it/s]Loading logs:  15%|█▍        | 20/136 [00:00<00:04, 28.92it/s]Loading logs:  19%|█▉        | 26/136 [00:00<00:03, 35.03it/s]Loading logs:  23%|██▎       | 31/136 [00:00<00:02, 37.56it/s]Loading logs:  26%|██▋       | 36/136 [00:01<00:02, 35.83it/s]Loading logs:  31%|███       | 42/136 [00:01<00:02, 39.24it/s]Loading logs:  36%|███▌      | 49/136 [00:01<00:01, 46.13it/s]Loading logs:  40%|███▉      | 54/136 [00:01<00:02, 40.12it/s]Loading logs:  44%|████▍     | 60/136 [00:01<00:01, 43.19it/s]Loading logs:  48%|████▊     | 65/136 [00:01<00:01, 44.17it/s]Loading logs:  51%|█████▏    | 70/136 [00:01<00:01, 35.48it/s]Loading logs:  55%|█████▌    | 75/136 [00:02<00:01, 37.89it/s]Loading logs:  59%|█████▉    | 80/136 [00:02<00:01, 39.23it/s]Loading logs:  62%|██████▎   | 85/136 [00:02<00:01, 25.93it/s]Loading logs:  65%|██████▌   | 89/136 [00:02<00:01, 27.06it/s]Loading logs:  70%|██████▉   | 95/136 [00:02<00:01, 33.05it/s]Loading logs:  73%|███████▎  | 99/136 [00:02<00:01, 31.47it/s]Loading logs:  76%|███████▌  | 103/136 [00:03<00:01, 26.91it/s]Loading logs:  79%|███████▉  | 108/136 [00:03<00:00, 30.71it/s]Loading logs:  84%|████████▍ | 114/136 [00:03<00:00, 34.89it/s]Loading logs:  87%|████████▋ | 118/136 [00:03<00:00, 19.89it/s]Loading logs:  89%|████████▉ | 121/136 [00:03<00:00, 20.85it/s]Loading logs:  92%|█████████▏| 125/136 [00:04<00:00, 23.36it/s]Loading logs:  94%|█████████▍| 128/136 [00:04<00:00, 17.98it/s]Loading logs:  99%|█████████▉| 135/136 [00:04<00:00, 26.28it/s]Loading logs: 100%|██████████| 136/136 [00:04<00:00, 30.70it/s]
+Inputs PASS: 12146/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/drivor_vitb_best23_navtest_1gpu_20261109T031145
+loading  timm/vit_base_patch14_dinov2.lvd142m
+Loading full checkpoint on CPU: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/training_drivoR_Nav1_vitb_8gpu_b16_25epochs/11.07_03.36/lightning_logs/version_0/checkpoints/best-epoch=23-step=19344.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 466, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 23, 'global_step': 19344}
+1/12146, elapsed=6.5s, last_valid=True
+25/12146, elapsed=25.1s, last_valid=True
+50/12146, elapsed=44.9s, last_valid=True
+75/12146, elapsed=63.1s, last_valid=True
+100/12146, elapsed=80.4s, last_valid=True
+125/12146, elapsed=98.2s, last_valid=True
+150/12146, elapsed=117.7s, last_valid=True
+175/12146, elapsed=135.2s, last_valid=True
+200/12146, elapsed=153.0s, last_valid=True
+225/12146, elapsed=170.6s, last_valid=True
+250/12146, elapsed=189.6s, last_valid=True
+275/12146, elapsed=207.3s, last_valid=True
+300/12146, elapsed=225.4s, last_valid=True
+325/12146, elapsed=244.9s, last_valid=True
+350/12146, elapsed=262.8s, last_valid=True
+375/12146, elapsed=280.9s, last_valid=True
+400/12146, elapsed=299.2s, last_valid=True
+425/12146, elapsed=317.4s, last_valid=True
+450/12146, elapsed=336.4s, last_valid=True
+475/12146, elapsed=354.2s, last_valid=True
+500/12146, elapsed=372.1s, last_valid=True
+525/12146, elapsed=389.9s, last_valid=True
+550/12146, elapsed=407.5s, last_valid=True
+575/12146, elapsed=425.6s, last_valid=True
+600/12146, elapsed=443.5s, last_valid=True
+625/12146, elapsed=462.0s, last_valid=True
+650/12146, elapsed=480.1s, last_valid=True
+675/12146, elapsed=498.2s, last_valid=True
+700/12146, elapsed=516.1s, last_valid=True
+725/12146, elapsed=534.2s, last_valid=True
+750/12146, elapsed=552.2s, last_valid=True
+Traceback (most recent call last):
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_vitb.py", line 227, in <module>
+    main()
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_vitb.py", line 191, in main
+    prediction = agent(features)
+  File "/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/navsim/agents/drivoR/drivor_agent.py", line 182, in forward
+    return self._drivor_model(features)
+  File "/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+KeyboardInterrupt

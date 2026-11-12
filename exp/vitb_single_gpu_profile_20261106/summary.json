@@ -1,0 +1,64 @@
+{
+  "device": "PPU-ZW810E",
+  "device_total_mib": 24566,
+  "runs": {
+    "b2": {
+      "batch_size": 2,
+      "complete": true,
+      "out_of_memory": false,
+      "steps": 6,
+      "median_s": {
+        "end_to_end_s": 1.2796374244935578,
+        "forward_s": 0.15892157751659397,
+        "pdm_score_s": 0.5821659384964732,
+        "backward_s": 0.5078931160242064,
+        "wait_and_transfer_s": 0.004711184985353611
+      },
+      "scenes_per_second": 1.5629427224602628,
+      "peak_allocated_gib": 8.988368034362793,
+      "peak_reserved_gib": 9.32421875,
+      "actual_optimizer_updates": 5.0,
+      "finite_scene_gradients": true
+    },
+    "b4_monitor": {
+      "batch_size": 4,
+      "complete": true,
+      "out_of_memory": false,
+      "steps": 20,
+      "median_s": {
+        "end_to_end_s": 2.4552800834935624,
+        "forward_s": 0.43752462301927153,
+        "pdm_score_s": 0.621866701010731,
+        "backward_s": 1.3433971620106604,
+        "wait_and_transfer_s": 0.00709367600211408
+      },
+      "scenes_per_second": 1.6291420383732722,
+      "peak_allocated_gib": 17.1660213470459,
+      "peak_reserved_gib": 17.5703125,
+      "actual_optimizer_updates": 19.0,
+      "finite_scene_gradients": true,
+      "ppu_utilization_sample_mean": 54.78260869565217,
+      "ppu_utilization_range": [
+        0,
+        100
+      ],
+      "ppu_utilization_samples": 46,
+      "max_smi_memory_mib": 18156
+    },
+    "b8": {
+      "batch_size": 8,
+      "complete": false,
+      "out_of_memory": true,
+      "steps": 0
+    }
+  },
+  "linear_memory_extrapolation_gib": {
+    "16": 66.23194122314453,
+    "20": 82.58724784851074,
+    "24": 98.94255447387695,
+    "32": 131.65316772460938
+  },
+  "extrapolation_warning": "Two small-batch measurements on one 24GB device; not a measurement on the target 96GB device; kernels, DDP and scene shapes may change memory.",
+  "timing_scope": "FP16, full native model/loss, native Ray PDM scoring, real 32-scene navtrain subset; excludes first two batches and short-subset epoch-start batches for medians; PPU utilization window includes short epoch waits. Synchronizing instrumentation adds overhead.",
+  "production_settings_changed": false
+}
